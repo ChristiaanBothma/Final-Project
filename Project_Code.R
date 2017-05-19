@@ -72,6 +72,8 @@ version <- read_csv("Data/version.csv") %>% arrange(id)
 
 
 
+
+
 # 2. Reputation of bug reporter and pass success rate on chances of bug being fixed. 
 
 # Filter for values of reports FIXED and WONTFIX under current resolution 
