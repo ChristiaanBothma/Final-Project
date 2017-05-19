@@ -26,6 +26,8 @@ bug_status <- read_csv("Data/bug_status.csv") %>% arrange(id)
 cc <- read_csv("Data/cc.csv") %>% arrange(id) 
 # NB some observations shifted and would need to be fixed. Some rows have 2 email adresses. 
 
+
+print(cs)
 # There are no duplicate ID numbers in the reports file: 
 anyDuplicated(reports$id)
 
