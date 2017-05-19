@@ -3,10 +3,10 @@
 ##################
 
 # Run this once and then you don't have to again: --->
-if (!require("devtools")) install.packages("devtools")
-library(devtools)
-devtools::install_github("Nicktz/rmsfuns")
-library(rmsfuns)
+# if (!require("devtools")) install.packages("devtools")
+# library(devtools)
+# devtools::install_github("Nicktz/rmsfuns")
+# library(rmsfuns)
 #------>
 
 source("Code/packageloads.R")
