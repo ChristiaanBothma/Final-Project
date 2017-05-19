@@ -26,8 +26,6 @@ bug_status <- read_csv("Data/bug_status.csv") %>% arrange(id)
 cc <- read_csv("Data/cc.csv") %>% arrange(id) 
 # NB some observations shifted and would need to be fixed. Some rows have 2 email adresses. 
 
-
-print(cs)
 # There are no duplicate ID numbers in the reports file: 
 anyDuplicated(reports$id)
 
@@ -72,6 +70,10 @@ version <- read_csv("Data/version.csv") %>% arrange(id)
 
 # 1. Past success rate influence likelihood of bug being fixed:
 
+
+
+# 2. Reputation of bug reporter and pass success rate on chances of bug being fixed. 
+
 # Filter for values of reports FIXED and WONTFIX under current resolution 
 # and create variables for fixed and past success rate of reporter (NOTE needs to be assigned to):
 
@@ -83,5 +85,3 @@ Reports1 <- reports %>% filter(current_resolution == "FIXED" | current_resolutio
 anyDuplicated(Reports1$id)
 # See summary of past success rate by reporter:
 Reports1 %>% group_by(reporter) %>% summarise(pastSuccess = mean(past_success)) 
-
-# 2. 
