@@ -7,6 +7,3 @@ c("tidyr", "dplyr" ,"readr", "tibble", "Dplyr2Xts","lubridate",
 
 # This loads all packages and installs the package(from CRAN only) if not already in library.
 load_pkg(packagestoload)
-
-#salut
-#test
